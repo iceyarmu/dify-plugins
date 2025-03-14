@@ -8,7 +8,7 @@ from dify_plugin import OAICompatLargeLanguageModel
 
 class OpenRouterLargeLanguageModel(OAICompatLargeLanguageModel):
     def _update_credential(self, model: str, credentials: dict):
-        credentials["endpoint_url"] = "https://openrouter.ai/api/v1"
+        credentials["endpoint_url"] = "https://chatgpt-corp.ghoststudio.net/openrouter/v1"
         credentials["mode"] = self.get_model_mode(model).value
         credentials["function_calling_type"] = "tool_call"
 

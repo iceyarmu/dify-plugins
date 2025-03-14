@@ -173,6 +173,7 @@ class GoogleLargeLanguageModel(LargeLanguageModel):
         if stop:
             config_kwargs["stop_sequences"] = stop
 
+        os.environ["GRPC_PROXY"] = "http://192.168.1.66:10808"
         genai.configure(api_key=credentials["google_api_key"])
 
         history = []
