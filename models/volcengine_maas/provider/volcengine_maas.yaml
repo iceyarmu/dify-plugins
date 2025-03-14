@@ -9,6 +9,7 @@ extra:
     model_sources:
     - models/llm/llm.py
     - models/text_embedding/text_embedding.py
+    - models/tts/tts.py
     provider_source: provider/volcengine_maas.py
 help:
   title:
@@ -345,7 +346,11 @@ models:
   text_embedding:
     predefined:
     - models/text_embedding/*.yaml
+  tts:
+    predefined:
+    - models/tts/*.yaml
 provider: volcengine_maas
 supported_model_types:
 - llm
+- tts
 - text-embedding

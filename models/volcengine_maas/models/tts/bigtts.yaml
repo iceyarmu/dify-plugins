@@ -1,24 +1,25 @@
-model: tts-1
+model: bigtts
 model_type: tts
 model_properties:
-  default_voice: 'Shinyzh_female_cancan_mars_bigtts'
+  default_voice: 'zh_female_qingxinnvsheng_mars_bigtts'
   voices:
-    - mode: "Shinyzh_female_cancan_mars_bigtts"
+    # 通用场景
+    - mode: "zh_female_cancan_mars_bigtts"
       name: "灿灿/Shiny"
       language: ["zh-Hans", "en-US"]
     - mode: "zh_female_qingxinnvsheng_mars_bigtts"
       name: "清新女声"
       language: ["zh-Hans"]
-    - mode: "Lilyzh_female_linjia_mars_bigtts"
+    - mode: "zh_female_linjia_mars_bigtts"
       name: "邻家小妹/Lily"
       language: ["zh-Hans", "en-US"]
-    - mode: "Skyezh_female_shuangkuaisisi_moon_bigtts"
+    - mode: "zh_female_shuangkuaisisi_moon_bigtts"
       name: "爽快思思/Skye"
       language: ["zh-Hans", "en-US"]
-    - mode: "Alvinzh_male_wennuanahu_moon_bigtts"
+    - mode: "zh_male_wennuanahu_moon_bigtts"
       name: "温暖阿虎/Alvin"
       language: ["zh-Hans", "en-US"]
-    - mode: "Brayanzh_male_shaonianzixin_moon_bigtts"
+    - mode: "zh_male_shaonianzixin_moon_bigtts"
       name: "少年梓辛/Brayan"
       language: ["zh-Hans", "en-US"]
     - mode: "zh_female_zhixingnvsheng_mars_bigtts"
@@ -57,41 +58,25 @@ model_properties:
     - mode: "zh_female_xinlingjitang_moon_bigtts"
       name: "心灵鸡汤"
       language: ["zh-Hans"]
-    - mode: "ICL_zh_female_zhixingwenwan_tob"
-      name: "知性温婉"
-      language: ["zh-Hans"]
-    - mode: "ICL_zh_male_nuanxintitie_tob"
-      name: "暖心体贴"
-      language: ["zh-Hans"]
-    - mode: "ICL_zh_female_wenrouwenya_tob"
-      name: "温柔文雅"
-      language: ["zh-Hans"]
-    - mode: "ICL_zh_male_kailangqingkuai_tob"
-      name: "开朗轻快"
-      language: ["zh-Hans"]
-    - mode: "ICL_zh_male_huoposhuanglang_tob"
-      name: "活泼爽朗"
-      language: ["zh-Hans"]
-    - mode: "ICL_zh_male_shuaizhenxiaohuo_tob"
-      name: "率真小伙"
-      language: ["zh-Hans"]
-    - mode: "Smithen_male_smith_mars_bigtts"
+
+    # 多语种
+    - mode: "en_male_smith_mars_bigtts"
       name: "Smith"
       language: ["en-GB"]
-    - mode: "Annaen_female_anna_mars_bigtts"
+    - mode: "en_female_anna_mars_bigtts"
       name: "Anna"
       language: ["en-GB"]
-    - mode: "Adamen_male_adam_mars_bigtts"
+    - mode: "en_male_adam_mars_bigtts"
       name: "Adam"
       language: ["en-US"]
-    - mode: "Sarahen_female_sarah_mars_bigtts"
+    - mode: "en_female_sarah_mars_bigtts"
       name: "Sarah"
       language: ["en-AU"]
-    - mode: "Drywen_male_dryw_mars_bigtts"
+    - mode: "en_male_dryw_mars_bigtts"
       name: "Dryw"
       language: ["en-AU"]
     - mode: "multi_male_jingqiangkanye_moon_bigtts"
-      name: "かずね（和音）/Javier/Álvaro"
+      name: "かずね（和音）/Javier or Álvaro"
       language: ["ja-JP", "es-ES"]
     - mode: "multi_female_shuangkuaisisi_moon_bigtts"
       name: "はるこ（晴子）/Esmeralda"
@@ -102,36 +87,50 @@ model_properties:
     - mode: "multi_female_gaolengyujie_moon_bigtts"
       name: "あけみ（朱美）"
       language: ["ja-JP"]
+
+    # 趣味口音
     - mode: "zh_male_jingqiangkanye_moon_bigtts"
       name: "京腔侃爷/Harmony"
-      language: ["zh-Hans-CN-BJ", "en-US"]
+      language: ["zh-Hans", "en-US"]
+      description: "北京口音"
     - mode: "zh_female_wanwanxiaohe_moon_bigtts"
       name: "湾湾小何"
-      language: ["zh-Hans-CN-TW"]
+      language: ["zh-Hans"]
+      description: "台湾口音"
     - mode: "zh_female_wanqudashu_moon_bigtts"
       name: "湾区大叔"
-      language: ["zh-Hans-CN-GD"]
+      language: ["zh-Hans"]
+      description: "广东口音"
     - mode: "zh_female_daimengchuanmei_moon_bigtts"
       name: "呆萌川妹"
-      language: ["zh-Hans-CN-SC"]
+      language: ["zh-Hans"]
+      description: "四川口音"
     - mode: "zh_male_guozhoudege_moon_bigtts"
       name: "广州德哥"
-      language: ["zh-Hans-CN-GD"]
+      language: ["zh-Hans"]
+      description: "广东口音"
     - mode: "zh_male_beijingxiaoye_moon_bigtts"
       name: "北京小爷"
-      language: ["zh-Hans-CN-BJ"]
+      language: ["zh-Hans"]
+      description: "北京口音"
     - mode: "zh_male_haoyuxiaoge_moon_bigtts"
       name: "浩宇小哥"
-      language: ["zh-Hans-CN-SD"]
+      language: ["zh-Hans"]
+      description: "青岛口音"
     - mode: "zh_male_guangxiyuanzhou_moon_bigtts"
       name: "广西远舟"
-      language: ["zh-Hans-CN-GX"]
+      language: ["zh-Hans"]
+      description: "广西口音"
     - mode: "zh_female_meituojieer_moon_bigtts"
       name: "妹坨洁儿"
-      language: ["zh-Hans-CN-HN"]
+      language: ["zh-Hans"]
+      description: "长沙口音"
     - mode: "zh_male_yuzhouzixuan_moon_bigtts"
       name: "豫州子轩"
-      language: ["zh-Hans-CN-HA"]
+      language: ["zh-Hans"]
+      description: "河南口音"
+
+    # 角色扮演
     - mode: "zh_male_naiqimengwa_mars_bigtts"
       name: "奶气萌娃"
       language: ["zh-Hans"]
@@ -156,14 +155,84 @@ model_properties:
     - mode: "zh_female_yuanqinvyou_moon_bigtts"
       name: "撒娇学妹"
       language: ["zh-Hans"]
+    - mode: "zh_male_dongfanghaoran_moon_bigtts"
+      name: "东方浩然"
+      language: ["zh-Hans"]
+
+    # 视频配音
+    - mode: "zh_male_jieshuonansheng_mars_bigtts"
+      name: "磁性解说男声/Morgan"
+      language: ["zh-Hans", "en-US"]
+    - mode: "zh_female_jitangmeimei_mars_bigtts"
+      name: "鸡汤妹妹/Hope"
+      language: ["zh-Hans", "en-US"]
+    - mode: "zh_female_tiexinnvsheng_mars_bigtts"
+      name: "贴心女声/Candy"
+      language: ["zh-Hans", "en-US"]
+    - mode: "zh_female_qiaopinvsheng_mars_bigtts"
+      name: "俏皮女声"
+      language: ["zh-Hans"]
+    - mode: "zh_female_mengyatou_mars_bigtts"
+      name: "萌丫头/Cutey"
+      language: ["zh-Hans", "en-US"]
+    - mode: "zh_male_changtianyi_mars_bigtts"
+      name: "有声阅读悬疑解说"
+      language: ["zh-Hans"]
+    - mode: "zh_male_ruyaqingnian_mars_bigtts"
+      name: "儒雅青年"
+      language: ["zh-Hans"]
+    - mode: "zh_male_baqiqingshu_mars_bigtts"
+      name: "霸气青叔"
+      language: ["zh-Hans"]
+    - mode: "zh_male_qingcang_mars_bigtts"
+      name: "擎苍"
+      language: ["zh-Hans"]
+    - mode: "zh_male_yangguangqingnian_mars_bigtts"
+      name: "活力小哥"
+      language: ["zh-Hans"]
+    - mode: "zh_female_gufengshaoyu_mars_bigtts"
+      name: "古风少御"
+      language: ["zh-Hans"]
+    - mode: "zh_female_wenroushunv_mars_bigtts"
+      name: "温柔淑女"
+      language: ["zh-Hans"]
+    - mode: "zh_female_wenrouxiaoya_moon_bigtts"
+      name: "温柔小雅"
+      language: ["zh-Hans"]
+    - mode: "zh_male_chunhui_mars_bigtts"
+      name: "广告解说"
+      language: ["zh-Hans"]
+    - mode: "zh_female_shaoergushi_mars_bigtts"
+      name: "少儿故事"
+      language: ["zh-Hans"]
+    - mode: "zh_male_silang_mars_bigtts"
+      name: "四郎"
+      language: ["zh-Hans"]
+
+    # ICL voices (Business/Professional)
+    - mode: "ICL_zh_female_zhixingwenwan_tob"
+      name: "知性温婉"
+      language: ["zh-Hans"]
+    - mode: "ICL_zh_male_nuanxintitie_tob"
+      name: "暖心体贴"
+      language: ["zh-Hans"]
+    - mode: "ICL_zh_female_wenrouwenya_tob"
+      name: "温柔文雅"
+      language: ["zh-Hans"]
+    - mode: "ICL_zh_male_kailangqingkuai_tob"
+      name: "开朗轻快"
+      language: ["zh-Hans"]
+    - mode: "ICL_zh_male_huoposhuanglang_tob"
+      name: "活泼爽朗"
+      language: ["zh-Hans"]
+    - mode: "ICL_zh_male_shuaizhenxiaohuo_tob"
+      name: "率真小伙"
+      language: ["zh-Hans"]
     - mode: "ICL_zh_female_bingruoshaonv_tob"
       name: "病弱少女"
       language: ["zh-Hans"]
     - mode: "ICL_zh_female_huoponvhai_tob"
       name: "活泼女孩"
-      language: ["zh-Hans"]
-    - mode: "zh_male_dongfanghaoran_moon_bigtts"
-      name: "东方浩然"
       language: ["zh-Hans"]
     - mode: "ICL_zh_male_lvchaxiaoge_tob"
       name: "绿茶小哥"
@@ -297,9 +366,8 @@ model_properties:
     - mode: "ICL_zh_female_linjuayi_tob"
       name: "邻居阿姨"
       language: ["zh-Hans"]
-    - mode: "zh_female_wenrouxiaoya_moon_bigtts"
-      name: "温柔小雅"
-      language: ["zh-Hans"]
+    
+    # Special Characters
     - mode: "zh_male_tiancaitongsheng_mars_bigtts"
       name: "天才童声"
       language: ["zh-Hans"]
@@ -321,56 +389,11 @@ model_properties:
     - mode: "zh_female_yingtaowanzi_mars_bigtts"
       name: "樱桃丸子"
       language: ["zh-Hans"]
-    - mode: "zh_male_chunhui_mars_bigtts"
-      name: "广告解说"
-      language: ["zh-Hans"]
-    - mode: "zh_female_shaoergushi_mars_bigtts"
-      name: "少儿故事"
-      language: ["zh-Hans"]
-    - mode: "zh_male_silang_mars_bigtts"
-      name: "四郎"
-      language: ["zh-Hans"]
-    - mode: "zh_male_jieshuonansheng_mars_bigtts"
-      name: "磁性解说男声/Morgan"
-      language: ["zh-Hans", "en-US"]
-    - mode: "zh_female_jitangmeimei_mars_bigtts"
-      name: "鸡汤妹妹/Hope"
-      language: ["zh-Hans", "en-US"]
-    - mode: "zh_female_tiexinnvsheng_mars_bigtts"
-      name: "贴心女声/Candy"
-      language: ["zh-Hans", "en-US"]
-    - mode: "zh_female_qiaopinvsheng_mars_bigtts"
-      name: "俏皮女声"
-      language: ["zh-Hans"]
-    - mode: "zh_female_mengyatou_mars_bigtts"
-      name: "萌丫头/Cutey"
-      language: ["zh-Hans", "en-US"]
-    - mode: "zh_male_changtianyi_mars_bigtts"
-      name: "悬疑解说"
-      language: ["zh-Hans"]
-    - mode: "zh_male_ruyaqingnian_mars_bigtts"
-      name: "儒雅青年"
-      language: ["zh-Hans"]
-    - mode: "zh_male_baqiqingshu_mars_bigtts"
-      name: "霸气青叔"
-      language: ["zh-Hans"]
-    - mode: "zh_male_qingcang_mars_bigtts"
-      name: "擎苍"
-      language: ["zh-Hans"]
-    - mode: "zh_male_yangguangqingnian_mars_bigtts"
-      name: "活力小哥"
-      language: ["zh-Hans"]
-    - mode: "zh_female_gufengshaoyu_mars_bigtts"
-      name: "古风少御"
-      language: ["zh-Hans"]
-    - mode: "zh_female_wenroushunv_mars_bigtts"
-      name: "温柔淑女"
-      language: ["zh-Hans"]
-  word_limit: 7000
+  word_limit: 1024
   audio_type: 'mp3'
-  max_workers: 5
+  max_workers: 10
 pricing:
   input: '1'
   output: '0'
-  unit: '0.0001'
+  unit: '0.0005'
   currency: RMB
