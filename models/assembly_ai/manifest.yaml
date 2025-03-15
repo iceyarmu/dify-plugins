@@ -1,0 +1,36 @@
+version: 0.0.1
+type: plugin
+author: "yarmu"
+name: "assembly_ai"
+description:
+  en_US: Models provided by AssemblyAI, currently support ASR.
+  zh_Hans: AssemblyAI 提供的模型，目前支持 ASR。
+icon: assembly_ai.jpeg
+label:
+  en_US: "Assembly AI"
+created_at: "2025-03-15T15:24:33.625407551-04:00"
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: false
+      text_embedding: false
+      rerank: false
+      tts: false
+      speech2text: true
+      moderation: false
+plugins:
+  models:
+    - "provider/assembly_ai.yaml"
+meta:
+  version: 0.0.1
+  arch:
+    - "amd64"
+    - "arm64"
+  runner:
+    language: "python"
+    version: "3.12"
+    entrypoint: "main"

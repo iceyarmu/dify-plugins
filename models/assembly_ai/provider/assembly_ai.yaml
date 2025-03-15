@@ -1,0 +1,67 @@
+provider: assembly_ai
+label:
+  en_US: Assembly AI
+description:
+  en_US: Models provided by AssemblyAI, currently only support ASR.
+  zh_Hans: AssemblyAI 提供的模型，目前支持 ASR。
+icon_small:
+  en_US: assembly_ai.jpeg
+icon_large:
+  en_US: assembly_ai.jpeg
+background: "#E5E7EB"
+help:
+  title:
+    en_US: Get your API key from AssemblyAI
+    zh_Hans: 从 AssemblyAI 获取你的 API Key
+  url:
+    en_US: https://www.assemblyai.com/app/api-keys/
+supported_model_types:
+  - speech2text
+configurate_methods:
+  - predefined-model
+  - customizable-model
+provider_credential_schema:
+  credential_form_schemas:
+    - variable: api_key
+      label:
+        en_US: API Key
+      type: secret-input
+      required: true
+      placeholder:
+        zh_Hans: 在此输入您的 API Key
+        en_US: Enter your API Key
+model_credential_schema:
+  model:
+    label:
+      en_US: Model Name
+      zh_Hans: 模型名称
+    placeholder:
+      en_US: Enter your model name
+      zh_Hans: 输入模型名称
+  credential_form_schemas:
+    - variable: api_key
+      label:
+        en_US: API Key
+      type: secret-input
+      required: true
+      placeholder:
+        zh_Hans: 在此输入您的 API Key
+        en_US: Enter your API Key
+    - variable: model_id
+      label:
+        zh_Hans: 模型 ID
+        en_US: Model ID
+      type: text-input
+      required: true
+      placeholder:
+        zh_Hans: 在此输入您的模型 ID
+        en_US: Enter your Model ID
+models:
+  speech2text:
+    predefined:
+      - "models/speech2text/*.yaml"
+extra:
+  python:
+    provider_source: provider/assembly_ai.py
+    model_sources:
+      - "models/speech2text/speech2text.py"
